@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-Login</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    
+</head>
+<body>
+    <main class="auth">
+
+        <div class="auth__container">
+
+            <!-- Left Image Section -->
+
+            <div class="auth__visual reveal-left">
+
+                <div class="auth__overlay">
+
+                    <span class="section__tag">
+
+                        <i class="ri-plant-line"></i>
+
+                        Smart Agriculture
+
+                    </span>
+
+                    <h1>
+
+                        Grow Smarter.
+                        <span>Farm Better.</span>
+
+                    </h1>
+
+                    <p>
+
+                        Empowering farmers with
+                        AI-driven insights and
+                        sustainable solutions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Right Form Section -->
+
+            <div class="auth__content reveal-right">
+
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo-stackly.webp"
+                        alt="StacklyAgri Logo">
+                </a>
+
+                <h2 class="auth__title">
+
+                    Create <span>Account</span>
+
+                </h2>
+
+                <p class="auth__subtitle">
+
+                    Join us and transform agriculture
+                    with smart technology.
+
+                </p>
+
+                <form class="auth__form">
+
+                    <!-- Role Selection -->
+
+                    <div class="auth__role">
+
+                        <p class="auth__role-title">
+
+                            Select Role
+
+                        </p>
+
+                        <div class="auth__role-options">
+
+                            <label class="auth__role-card">
+
+                                <input
+                                    type="radio"
+                                    name="role"
+                                    value="admin"
+                                    checked>
+
+                                <span>
+
+                                    <i class="ri-admin-line"></i>
+
+                                    Admin
+
+                                </span>
+
+                            </label>
+
+                            <label class="auth__role-card">
+
+                                <input
+                                    type="radio"
+                                    name="role"
+                                    value="farmer">
+
+                                <span>
+
+                                    <i class="ri-plant-line"></i>
+
+                                    Farmer
+
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Full Name -->
+
+                    <div class="auth__group">
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder=" "
+                            pattern="[A-Za-z ]+"
+                            title="Only letters and spaces are allowed"
+                            required>
+
+                        <label for="name">
+
+                            Full Name
+
+                        </label>
+
+                    </div>
+
+                    <!-- Email -->
+
+                    <div class="auth__group">
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder=" "
+                            required>
+
+                        <label for="email">
+
+                            Email Address
+
+                        </label>
+
+                    </div>
+
+                    <!-- Phone -->
+
+                    <div class="auth__group">
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder=" "
+                            pattern="[0-9]{10}"
+                            required>
+
+                        <label for="phone">
+
+                            Phone Number
+
+                        </label>
+
+                    </div>
+
+                    <!-- Password -->
+
+                    <div class="auth__group">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder=" "
+                            required>
+
+                        <label for="password">
+
+                            Password
+
+                        </label>
+
+                        <i class="ri-eye-line auth__toggle"
+                        id="togglePassword">
+
+                        </i>
+
+                    </div>
+
+                    <small class="password__hint">
+
+                        Must contain 8+ characters,
+                        uppercase, lowercase,
+                        number & special character.
+
+                    </small>
+
+                    <!-- Confirm Password -->
+
+                    <div class="auth__group">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder=" "
+                            required>
+
+                        <label for="confirmPassword">
+
+                            Confirm Password
+
+                        </label>
+
+                        <i class="ri-eye-line auth__toggle"
+                        id="toggleConfirmPassword">
+
+                        </i>
+
+                    </div>
+
+                    <!-- Terms -->
+
+                    <div class="auth__options">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                required>
+
+                            I agree to the Terms & Conditions
+
+                        </label>
+
+                    </div>
+
+                    <!-- Submit Button -->
+
+                    <button
+                        type="submit"
+                        class="button auth__button">
+
+                        Create Account
+
+                    </button>
+
+                    <!-- Message -->
+
+                    <p class="auth__message">
+
+                    </p>
+
+                </form>
+
+                <p class="auth__switch">
+
+                    Already have an account?
+
+                    <a href="login.html">
+
+                        Login
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

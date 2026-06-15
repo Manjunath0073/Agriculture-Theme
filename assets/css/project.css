@@ -8,6 +8,20 @@
 
     text-align:center;
 }
+.projects-hero{
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+        180deg,
+        #FFFFFF,
+        #F8FBF5
+    );
+
+}
 
 .projects-hero__content{
 
@@ -137,7 +151,7 @@
         .8s ease;
 }
 
-.reveal-scale.active{
+.reveal-scale.show{
 
     opacity:1;
 
@@ -1021,3 +1035,11 @@
     }
 
 }
+
+.projects-hero__image img{
+
+    width:100%;
+    height:500px;
+    object-fit:cover;
+
+} 

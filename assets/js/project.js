@@ -35,6 +35,7 @@ function showSlide(index){
     dots[index].classList.add(
         "active"
     );
+
 }
 
 function nextSlide(){
@@ -44,61 +45,131 @@ function nextSlide(){
     if(currentSlide >= slides.length){
 
         currentSlide = 0;
+
     }
 
     showSlide(currentSlide);
+
 }
 
-let sliderInterval =
-setInterval(nextSlide, 5000);
+/* Only run slider if testimonials exist */
 
-dots.forEach((dot,index)=>{
+if(slides.length > 0){
 
-    dot.addEventListener(
-        "click",
-        ()=>{
+    let sliderInterval =
+    setInterval(nextSlide, 4000);
 
-            currentSlide = index;
+    dots.forEach((dot,index)=>{
 
-            showSlide(
-                currentSlide
-            );
+        dot.addEventListener(
+            "click",
+            ()=>{
 
-            clearInterval(
+                currentSlide = index;
+
+                showSlide(currentSlide);
+
+                clearInterval(
+                    sliderInterval
+                );
+
+                sliderInterval =
+                setInterval(
+                    nextSlide,
+                    4000
+                );
+
+            }
+        );
+
+    });
+
+    const slider =
+    document.querySelector(
+        ".testimonial__slider"
+    );
+
+    if(slider){
+
+        slider.addEventListener(
+            "mouseenter",
+            ()=>clearInterval(
                 sliderInterval
-            );
+            )
+        );
 
-            sliderInterval =
-            setInterval(
-                nextSlide,
-                5000
+        slider.addEventListener(
+            "mouseleave",
+            ()=>{
+
+                sliderInterval =
+                setInterval(
+                    nextSlide,
+                    4000
+                );
+
+            }
+        );
+
+    }
+
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const reveals = document.querySelectorAll(
+    ".reveal-left,.reveal-right,.reveal-up,.reveal-scale"
+    );
+
+    const revealObserver =
+    new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+
+    reveals.forEach(item => {
+
+        revealObserver.observe(item);
+
+    });
+
+});
+
+const categoryPills =
+document.querySelectorAll(
+    ".category__pill"
+);
+
+categoryPills.forEach(pill => {
+
+    pill.addEventListener(
+        "click",
+        () => {
+
+            categoryPills.forEach(item => {
+
+                item.classList.remove(
+                    "active"
+                );
+
+            });
+
+            pill.classList.add(
+                "active"
             );
 
         }
     );
 
 });
-const slider =
-document.querySelector(
-    ".testimonial__slider"
-);
-
-slider.addEventListener(
-    "mouseenter",
-    ()=>clearInterval(
-        sliderInterval
-    )
-);
-
-slider.addEventListener(
-    "mouseleave",
-    ()=>{
-
-        sliderInterval =
-        setInterval(
-            nextSlide,
-            5000
-        );
-
-    }
-);

@@ -66,3 +66,35 @@ faqItems.forEach(item => {
     });
 
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const reveals = document.querySelectorAll(
+    ".reveal-left,.reveal-right,.reveal-up,.reveal-scale"
+    );
+
+    const revealObserver =
+    new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+
+    reveals.forEach(item => {
+
+        revealObserver.observe(item);
+
+    });
+
+});
