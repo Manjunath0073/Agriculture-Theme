@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | StacklyAgri</title>
+
+    <!-- Remix Icons -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <!-- Global CSS -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css">
+
+    <!-- Dashboard CSS -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/dashboard.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!--================ SIDEBAR ================-->
+
+        <aside class="sidebar">
+
+            <div class="sidebar__header">
+
+                <a
+                    href="index.html"
+                    class="logo">
+
+                    <img
+                        src="assets/images/logo-stackly.webp"
+                        alt="StacklyAgri">
+
+                </a>
+
+                <button
+                    class="sidebar__close">
+
+                    <i class="ri-close-line"></i>
+
+                </button>
+
+            </div>
+
+            <!-- User Profile -->
+
+            <div class="sidebar__user">
+
+                <div class="sidebar__avatar">
+
+                    <i class="ri-user-3-line"></i>
+
+                </div>
+
+                <h3
+                    id="userName">
+
+                    Madan Kumar
+
+                </h3>
+
+                <span
+                    id="userRole">
+
+                    Admin
+
+                </span>
+
+            </div>
+
+            <!-- Menu -->
+
+            <nav class="sidebar__menu">
+
+                <a
+                    href="#"
+                    class="sidebar__link active"
+                    data-page="dashboard">
+
+                    <i class="ri-dashboard-line"></i>
+
+                    <span>Dashboard</span>
+
+                </a>
+
+                <a
+                    href="#"
+                    class="sidebar__link"
+                    data-page="menu2">
+
+                    <i class="ri-group-line"></i>
+
+                    <span>My Crops</span>
+
+                </a>
+
+                <a
+                    href="#"
+                    class="sidebar__link"
+                    data-page="menu3">
+
+                    <i class="ri-bar-chart-line"></i>
+
+                    <span>Weather & Insight</span>
+
+                </a>
+
+                <a
+                    href="#"
+                    class="sidebar__link"
+                    data-page="profile">
+
+                    <i class="ri-user-settings-line"></i>
+
+                    <span>Profile</span>
+
+                </a>
+
+            </nav>
+
+            <!-- Logout -->
+
+            <button
+                class="sidebar__logout">
+
+                <i class="ri-logout-box-r-line"></i>
+
+                Logout
+
+            </button>
+
+        </aside>
+
+        <!--================ MAIN ================-->
+
+        <main class="dashboard__main">
+
+            <!-- Header -->
+
+            <header
+                class="dashboard__header">
+
+                <button
+                    class="dashboard__toggle">
+
+                    <i class="ri-menu-line"></i>
+
+                </button>
+
+                <div>
+
+                    <h2
+                        id="pageTitle">
+
+                        Dashboard
+
+                    </h2>
+
+                    <p>
+
+                        Welcome back to StacklyAgri
+
+                    </p>
+
+                </div>
+
+            </header>
+
+            <!-- Dashboard Content -->
+
+            <section
+                class="dashboard__content">
+
+                <!-- Dashboard Page -->
+                <section
+                    id="dashboardPage"
+                    class="dashboard__page">
+
+                    <div class="dashboard__cards">
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-plant-line"></i>
+
+                            <h3>Total Crops</h3>
+
+                            <span>12</span>
+
+                        </article>
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-map-pin-line"></i>
+
+                            <h3>Active Fields</h3>
+
+                            <span>5</span>
+
+                        </article>
+
+                        <article class="dashboard__card">
+
+                            <i class="ri-calendar-check-line"></i>
+
+                            <h3>Upcoming Harvests</h3>
+
+                            <span>3</span>
+
+                        </article>
+
+                    </div>
+
+                    <div class="dashboard__grid">
+
+                        <div class="dashboard__box">
+
+                            <h3>Recent Activities</h3>
+
+                            <ul class="dashboard__list">
+
+                                <li>✓ Wheat planted in Field A</li>
+
+                                <li>✓ Fertilizer applied</li>
+
+                                <li>✓ Irrigation completed</li>
+
+                                <li>✓ Harvest scheduled</li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="dashboard__box">
+
+                            <h3>Today's Tip</h3>
+
+                            <p>
+
+                                Monitor soil moisture levels
+                                regularly for better crop yield.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Menu 2 -->
+
+                <section
+                    id="menu2Page"
+                    class="dashboard__page"
+                    hidden>
+
+                    <div class="dashboard__table">
+
+                        <h3>My Crops</h3>
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Crop</th>
+
+                                    <th>Status</th>
+
+                                    <th>Harvest</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>Wheat</td>
+
+                                    <td>Healthy</td>
+
+                                    <td>15 Jul</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Rice</td>
+
+                                    <td>Growing</td>
+
+                                    <td>28 Aug</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Corn</td>
+
+                                    <td>Moderate</td>
+
+                                    <td>10 Sep</td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+                <!-- Menu 3 -->
+
+                <section
+                    id="menu3Page"
+                    class="dashboard__page"
+                    hidden>
+
+                    <div class="dashboard__grid">
+
+                        <div class="dashboard__box">
+
+                            <h3>Current Weather</h3>
+
+                            <p>🌡 Temperature: 28°C</p>
+
+                            <p>💧 Humidity: 72%</p>
+
+                            <p>🌧 Rain Chance: 40%</p>
+
+                            <p>💨 Wind: 10 km/h</p>
+
+                        </div>
+
+                        <div class="dashboard__box">
+
+                            <h3>Weather Advice</h3>
+
+                            <p>
+
+                                Light rainfall is expected.
+                                Delay irrigation for today.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Profile -->
+
+                <section
+                    id="profilePage"
+                    class="dashboard__page"
+                    hidden>
+
+                    <div class="profile__card">
+
+                        <h3>Profile Information</h3>
+
+                        <p>
+
+                            <strong>Name:</strong>
+
+                            <span id="profileName">
+
+                            </span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Email:</strong>
+
+                            <span id="profileEmail">
+
+                            </span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Role:</strong>
+
+                            <span id="profileRole">
+
+                            </span>
+
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Dashboard JS -->
+
+    <script
+        src="assets/js/dashboard.js">
+
+    </script>
+
+</body>
+
+</html>

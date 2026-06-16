@@ -218,24 +218,70 @@ if(form){
 
             /* Success */
 
-            message.classList.add(
-                "success"
-            );
+            /* Success */
 
-            message.textContent =
-                "Validation successful.";
+const role =
+document.querySelector(
+    'input[name="role"]:checked'
+).value;
 
-            setTimeout(()=>{
+const email =
+document.getElementById(
+    "email"
+).value;
 
-                message.textContent =
-                    "";
+const user = {
 
-                message.classList.remove(
-                    "success",
-                    "error"
-                );
+    name:
 
-            }, 4000);
+        document.getElementById(
+            "name"
+        )?.value ||
+
+        email.split(
+            "@"
+        )[0],
+
+    email: email,
+
+    role: role
+
+};
+
+localStorage.setItem(
+
+    "user",
+
+    JSON.stringify(
+        user
+    )
+
+);
+
+message.classList.add(
+    "success"
+);
+
+message.textContent =
+    "Validation successful.";
+
+setTimeout(()=>{
+
+    if(role === "admin"){
+
+        window.location.href =
+            "admin-dashboard.html";
+
+    }
+
+    else{
+
+        window.location.href =
+            "farmer-dashboard.html";
+
+    }
+
+}, 1000);
 
         }
     );
