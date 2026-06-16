@@ -194,9 +194,46 @@
                     id="dashboardPage"
                     class="dashboard__page">
 
+                    <!-- Welcome Banner -->
+
+                    <div class="dashboard__banner">
+
+                        <div>
+
+                            <h2>
+
+                                Welcome back,
+                                <span id="dashboardUser">
+
+                                    Farmer
+
+                                </span> 👋
+
+                            </h2>
+
+                            <p>
+
+                                Monitor your crops,
+                                weather and farm
+                                activities in one place.
+
+                            </p>
+
+                        </div>
+
+                        <i class="ri-plant-line">
+
+                        </i>
+
+                    </div>
+
+
+                    <!-- Statistics -->
+
                     <div class="dashboard__cards">
 
-                        <article class="dashboard__card">
+                        <article
+                            class="dashboard__card">
 
                             <i class="ri-plant-line"></i>
 
@@ -206,7 +243,8 @@
 
                         </article>
 
-                        <article class="dashboard__card">
+                        <article
+                            class="dashboard__card">
 
                             <i class="ri-map-pin-line"></i>
 
@@ -216,7 +254,8 @@
 
                         </article>
 
-                        <article class="dashboard__card">
+                        <article
+                            class="dashboard__card">
 
                             <i class="ri-calendar-check-line"></i>
 
@@ -226,23 +265,143 @@
 
                         </article>
 
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-heart-pulse-line"></i>
+
+                            <h3>Soil Health</h3>
+
+                            <span>92%</span>
+
+                        </article>
+
                     </div>
+
+
+                    <!-- Middle Grid -->
 
                     <div class="dashboard__grid">
 
                         <div class="dashboard__box">
 
-                            <h3>Recent Activities</h3>
+                            <h3>
 
-                            <ul class="dashboard__list">
+                                Today's Weather
 
-                                <li>✓ Wheat planted in Field A</li>
+                            </h3>
 
-                                <li>✓ Fertilizer applied</li>
+                            <div
+                                class="weather__summary">
 
-                                <li>✓ Irrigation completed</li>
+                                <p>
 
-                                <li>✓ Harvest scheduled</li>
+                                    🌡 28°C
+
+                                </p>
+
+                                <p>
+
+                                    💧 72% Humidity
+
+                                </p>
+
+                                <p>
+
+                                    🌧 40% Rain Chance
+
+                                </p>
+
+                                <p>
+
+                                    💨 10 km/h Wind
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="dashboard__box">
+
+                            <h3>
+
+                                Today's Tasks
+
+                            </h3>
+
+                            <ul
+                                class="dashboard__list">
+
+                                <li>
+
+                                    Irrigate Field A
+
+                                </li>
+
+                                <li>
+
+                                    Check soil moisture
+
+                                </li>
+
+                                <li>
+
+                                    Apply fertilizer
+
+                                </li>
+
+                                <li>
+
+                                    Inspect wheat crop
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Bottom Grid -->
+
+                    <div class="dashboard__grid">
+
+                        <div class="dashboard__box">
+
+                            <h3>
+
+                                Recent Activities
+
+                            </h3>
+
+                            <ul
+                                class="dashboard__list">
+
+                                <li>
+
+                                    ✓ Wheat planted
+
+                                </li>
+
+                                <li>
+
+                                    ✓ Fertilizer applied
+
+                                </li>
+
+                                <li>
+
+                                    ✓ Harvest completed
+
+                                </li>
+
+                                <li>
+
+                                    ✓ Weather alert received
+
+                                </li>
 
                             </ul>
 
@@ -250,14 +409,28 @@
 
                         <div class="dashboard__box">
 
-                            <h3>Today's Tip</h3>
+                            <h3>
 
-                            <p>
+                                AI Recommendations
 
-                                Monitor soil moisture levels
-                                regularly for better crop yield.
+                            </h3>
 
-                            </p>
+                            <div
+                                class="tip__card">
+
+                                <i
+                                    class="ri-lightbulb-flash-line">
+
+                                </i>
+
+                                <p>
+
+                                    Rain is expected tomorrow.
+                                    Delay irrigation by 24 hours.
+
+                                </p>
+
+                            </div>
 
                         </div>
 
@@ -272,9 +445,192 @@
                     class="dashboard__page"
                     hidden>
 
+                    <!-- Crop Stats -->
+
+                    <div class="dashboard__cards">
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-plant-line"></i>
+
+                            <h3>Total Crops</h3>
+
+                            <span>12</span>
+
+                        </article>
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-heart-pulse-line"></i>
+
+                            <h3>Healthy Crops</h3>
+
+                            <span>9</span>
+
+                        </article>
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-alert-line"></i>
+
+                            <h3>Need Attention</h3>
+
+                            <span>2</span>
+
+                        </article>
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-calendar-check-line"></i>
+
+                            <h3>Harvest Ready</h3>
+
+                            <span>1</span>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Crop Cards -->
+
+                    <div class="crop__grid">
+
+                        <article
+                            class="crop__card">
+
+                            <div class="crop__header">
+
+                                <h3>Wheat</h3>
+
+                                <span class="crop__status healthy">
+
+                                    Healthy
+
+                                </span>
+
+                            </div>
+
+                            <p>
+
+                                Field A-12
+
+                            </p>
+
+                            <div class="crop__details">
+
+                                <span>
+
+                                    🌱 Flowering
+
+                                </span>
+
+                                <span>
+
+                                    ⏳ 15 Days Left
+
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <article
+                            class="crop__card">
+
+                            <div class="crop__header">
+
+                                <h3>Rice</h3>
+
+                                <span class="crop__status moderate">
+
+                                    Moderate
+
+                                </span>
+
+                            </div>
+
+                            <p>
+
+                                Field B-07
+
+                            </p>
+
+                            <div class="crop__details">
+
+                                <span>
+
+                                    🌱 Growing
+
+                                </span>
+
+                                <span>
+
+                                    ⏳ 45 Days Left
+
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <article
+                            class="crop__card">
+
+                            <div class="crop__header">
+
+                                <h3>Corn</h3>
+
+                                <span class="crop__status alert">
+
+                                    Alert
+
+                                </span>
+
+                            </div>
+
+                            <p>
+
+                                Field C-03
+
+                            </p>
+
+                            <div class="crop__details">
+
+                                <span>
+
+                                    🌱 Germination
+
+                                </span>
+
+                                <span>
+
+                                    ⏳ 70 Days Left
+
+                                </span>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Crop Table -->
+
                     <div class="dashboard__table">
 
-                        <h3>My Crops</h3>
+                        <h3>
+
+                            Crop Records
+
+                        </h3>
 
                         <table>
 
@@ -283,6 +639,8 @@
                                 <tr>
 
                                     <th>Crop</th>
+
+                                    <th>Field</th>
 
                                     <th>Status</th>
 
@@ -298,6 +656,8 @@
 
                                     <td>Wheat</td>
 
+                                    <td>A-12</td>
+
                                     <td>Healthy</td>
 
                                     <td>15 Jul</td>
@@ -307,6 +667,8 @@
                                 <tr>
 
                                     <td>Rice</td>
+
+                                    <td>B-07</td>
 
                                     <td>Growing</td>
 
@@ -318,7 +680,9 @@
 
                                     <td>Corn</td>
 
-                                    <td>Moderate</td>
+                                    <td>C-03</td>
+
+                                    <td>Alert</td>
 
                                     <td>10 Sep</td>
 
@@ -339,32 +703,192 @@
                     class="dashboard__page"
                     hidden>
 
+                    <!-- Weather Cards -->
+
+                    <div class="dashboard__cards">
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-sun-line"></i>
+
+                            <h3>Temperature</h3>
+
+                            <span>28°C</span>
+
+                        </article>
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-drop-line"></i>
+
+                            <h3>Humidity</h3>
+
+                            <span>72%</span>
+
+                        </article>
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-cloudy-line"></i>
+
+                            <h3>Rain Chance</h3>
+
+                            <span>40%</span>
+
+                        </article>
+
+                        <article
+                            class="dashboard__card">
+
+                            <i class="ri-windy-line"></i>
+
+                            <h3>Wind Speed</h3>
+
+                            <span>10 km/h</span>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Forecast -->
+
+                    <div class="forecast__container">
+
+                        <h3>
+
+                            5-Day Forecast
+
+                        </h3>
+
+                        <div class="forecast__grid">
+
+                            <div class="forecast__card">
+
+                                <h4>Mon</h4>
+
+                                <i class="ri-sun-line"></i>
+
+                                <span>30°C</span>
+
+                            </div>
+
+                            <div class="forecast__card">
+
+                                <h4>Tue</h4>
+
+                                <i class="ri-cloudy-line"></i>
+
+                                <span>28°C</span>
+
+                            </div>
+
+                            <div class="forecast__card">
+
+                                <h4>Wed</h4>
+
+                                <i class="ri-rainy-line"></i>
+
+                                <span>26°C</span>
+
+                            </div>
+
+                            <div class="forecast__card">
+
+                                <h4>Thu</h4>
+
+                                <i class="ri-sun-cloudy-line"></i>
+
+                                <span>29°C</span>
+
+                            </div>
+
+                            <div class="forecast__card">
+
+                                <h4>Fri</h4>
+
+                                <i class="ri-sun-line"></i>
+
+                                <span>31°C</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Insights -->
+
                     <div class="dashboard__grid">
 
                         <div class="dashboard__box">
 
-                            <h3>Current Weather</h3>
+                            <h3>
 
-                            <p>🌡 Temperature: 28°C</p>
+                                Soil Conditions
 
-                            <p>💧 Humidity: 72%</p>
+                            </h3>
 
-                            <p>🌧 Rain Chance: 40%</p>
+                            <ul
+                                class="dashboard__list">
 
-                            <p>💨 Wind: 10 km/h</p>
+                                <li>
+
+                                    Moisture: 68%
+
+                                </li>
+
+                                <li>
+
+                                    pH Level: 6.5
+
+                                </li>
+
+                                <li>
+
+                                    Nitrogen: Moderate
+
+                                </li>
+
+                                <li>
+
+                                    Organic Matter: High
+
+                                </li>
+
+                            </ul>
 
                         </div>
 
                         <div class="dashboard__box">
 
-                            <h3>Weather Advice</h3>
+                            <h3>
 
-                            <p>
+                                AI Recommendations
 
-                                Light rainfall is expected.
-                                Delay irrigation for today.
+                            </h3>
 
-                            </p>
+                            <div
+                                class="tip__card">
+
+                                <i
+                                    class="ri-lightbulb-flash-line">
+
+                                </i>
+
+                                <p>
+
+                                    Light rainfall is expected
+                                    tomorrow. Delay irrigation
+                                    and monitor humidity levels.
+
+                                </p>
+
+                            </div>
 
                         </div>
 
@@ -379,39 +903,205 @@
                     class="dashboard__page"
                     hidden>
 
+                    <div class="profile__grid">
+
+                        <!-- User Profile -->
+
+                        <div class="profile__card">
+
+                            <div class="profile__header">
+
+                                <div class="profile__avatar">
+
+                                    <i class="ri-user-3-line"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h3
+                                        id="profileName">
+
+                                    </h3>
+
+                                    <span
+                                        id="profileRole">
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="profile__details">
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Email
+
+                                    </label>
+
+                                    <span
+                                        id="profileEmail">
+
+                                    </span>
+
+                                </div>
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Phone
+
+                                    </label>
+
+                                    <span>
+
+                                        +91 9876543210
+
+                                    </span>
+
+                                </div>
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Location
+
+                                    </label>
+
+                                    <span>
+
+                                        Coimbatore,
+                                        Tamil Nadu
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Farm Information -->
+
+                        <div class="profile__card">
+
+                            <h3>
+
+                                Farm Information
+
+                            </h3>
+
+                            <div class="profile__details">
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Farm Size
+
+                                    </label>
+
+                                    <span>
+
+                                        12 Acres
+
+                                    </span>
+
+                                </div>
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Primary Crop
+
+                                    </label>
+
+                                    <span>
+
+                                        Wheat
+
+                                    </span>
+
+                                </div>
+
+                                <div class="profile__item">
+
+                                    <label>
+
+                                        Soil Type
+
+                                    </label>
+
+                                    <span>
+
+                                        Loamy Soil
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Account Settings -->
+
                     <div class="profile__card">
 
-                        <h3>Profile Information</h3>
+                        <h3>
 
-                        <p>
+                            Account Settings
 
-                            <strong>Name:</strong>
+                        </h3>
 
-                            <span id="profileName">
+                        <div class="settings__list">
 
-                            </span>
+                            <div class="settings__item">
 
-                        </p>
+                                <span>
 
-                        <p>
+                                    Change Password
 
-                            <strong>Email:</strong>
+                                </span>
 
-                            <span id="profileEmail">
+                                <button
+                                    class="button">
 
-                            </span>
+                                    Update
 
-                        </p>
+                                </button>
 
-                        <p>
+                            </div>
 
-                            <strong>Role:</strong>
+                            <div class="settings__item">
 
-                            <span id="profileRole">
+                                <span>
 
-                            </span>
+                                    Notification Preferences
 
-                        </p>
+                                </span>
+
+                                <button
+                                    class="button">
+
+                                    Manage
+
+                                </button>
+
+                            </div>
+
+                        </div>
 
                     </div>
 

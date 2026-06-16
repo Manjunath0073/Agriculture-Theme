@@ -238,3 +238,21 @@ if(user){
         profileEmail.textContent =
             user.email;
 }
+
+if(user){
+
+    document.getElementById(
+        "profileName"
+    ).textContent =
+        user.name;
+
+    document.getElementById(
+        "profileRole"
+    ).textContent =
+        user.role;
+
+    document.getElementById(
+        "profileEmail"
+    ).textContent =
+        user.email;
+}
