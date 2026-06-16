@@ -1135,3 +1135,184 @@ th{
 
     color:var(--primary-color);
 }
+.dashboard__actions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:1rem;
+
+    margin-top:1rem;
+}
+.dashboard__actions .button{
+
+    flex:1;
+}
+
+.table__header{
+
+    display:flex;
+
+    justify-content:
+        space-between;
+
+    align-items:center;
+
+    margin-bottom:1rem;
+
+    gap:1rem;
+}
+
+.table__search{
+
+    padding:.75rem 1rem;
+
+    border:
+        1px solid
+        rgba(0,0,0,.1);
+
+    border-radius:12px;
+
+    outline:none;
+}
+.status{
+
+    padding:
+        .35rem .75rem;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+    font-weight:600;
+}
+
+.status.active{
+
+    background:
+        rgba(76,175,80,.12);
+
+    color:#2E7D32;
+}
+
+.status.inactive{
+
+    background:
+        rgba(244,67,54,.12);
+
+    color:#C62828;
+}
+.action__btn{
+
+    border:none;
+
+    padding:
+        .5rem 1rem;
+
+    border-radius:10px;
+
+    background:
+        var(--primary-color);
+
+    color:#fff;
+
+    cursor:pointer;
+}
+@media screen and
+(max-width:320px){
+
+    /* Profile Grid */
+
+    .profile__grid{
+
+        grid-template-columns:
+            1fr;
+
+        gap:1rem;
+    }
+
+    /* Profile Card */
+
+    .profile__card{
+
+        padding:1rem;
+
+        border-radius:16px;
+    }
+
+    /* Header */
+
+    .profile__header{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:.75rem;
+    }
+
+    /* Avatar */
+
+    .profile__avatar{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:1.5rem;
+    }
+
+    /* User Name */
+
+    #profileName{
+
+        font-size:1rem;
+    }
+
+    #profileRole{
+
+        font-size:.85rem;
+    }
+
+    /* Profile Details */
+
+    .profile__item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:.35rem;
+    }
+
+    .profile__item label{
+
+        font-size:.85rem;
+    }
+
+    .profile__item span{
+
+        font-size:.9rem;
+
+        word-break:
+            break-word;
+    }
+
+    /* Settings */
+
+    .settings__item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:.75rem;
+    }
+
+    .settings__item .button{
+
+        width:100%;
+    }
+
+}
