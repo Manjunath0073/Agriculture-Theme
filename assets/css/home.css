@@ -685,6 +685,14 @@
     color:var(--primary-color);
 
     font-weight:600;
+    position: relative;
+    z-index:2;
+
+    text-decoration:none;
+
+    width:fit-content;
+
+    cursor:pointer;
 }
 
 .service__link i{
@@ -716,7 +724,7 @@
 
     content:"";
 
-    position:absolute;
+    position:relative;
 
     inset:0;
 

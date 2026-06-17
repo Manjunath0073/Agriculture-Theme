@@ -1423,3 +1423,169 @@ th{
     }
 
 }
+
+.dashboard__header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    padding:1.5rem 2rem;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(76,175,80,.12),
+            rgba(255,255,255,.95)
+        );
+
+    border:
+        1px solid
+        rgba(76,175,80,.12);
+
+    border-radius:24px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.06);
+
+    position:relative;
+
+    overflow:hidden;
+
+    margin-bottom:2rem;
+}
+
+.dashboard__header::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:
+        rgba(76,175,80,.08);
+
+    border-radius:50%;
+
+    top:-80px;
+
+    right:-60px;
+}
+
+.dashboard__toggle{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#fff;
+
+    color:var(--primary-color);
+
+    font-size:1.4rem;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.dashboard__toggle:hover{
+
+    background:
+        var(--primary-color);
+
+    color:#fff;
+
+    transform:
+        translateY(-2px);
+}
+#pageTitle{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:
+        var(--title-color);
+
+    margin-bottom:.25rem;
+}
+.dashboard__header p{
+
+    color:
+        var(--text-color-light);
+
+    font-size:.95rem;
+
+    margin:0;
+}
+@media screen and
+(max-width:768px){
+
+    .dashboard__header{
+
+        padding:1.25rem;
+
+    }
+
+    #pageTitle{
+
+        font-size:1.5rem;
+    }
+    .dashboard__banner h2{
+        font-size: 1.7rem;
+    }
+
+}
+@media screen and
+(max-width:320px){
+
+    .dashboard__header{
+
+        padding:1rem;
+
+        gap:.75rem;
+    }
+    .dashboard__banner h2{
+        font-size: 1.5rem;
+    }
+    .dashboard__toggle{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:1.2rem;
+    }
+
+    #pageTitle{
+
+        font-size:1.2rem;
+    }
+
+    .dashboard__header p{
+
+        font-size:.8rem;
+    }
+
+}
