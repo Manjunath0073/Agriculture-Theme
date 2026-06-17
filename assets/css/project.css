@@ -34,7 +34,7 @@
 .projects-hero__title{
 
     font-size:
-        clamp(2.5rem, 5vw, 4.5rem);
+        clamp(2.2rem, 4vw, 3.8rem);
 
     line-height:1.2;
 
@@ -60,11 +60,12 @@
 
     margin:0 auto 2rem;
 
-    line-height:1.9;
+    line-height:1.7;
+    font-size: 1rem;
 }
 .projects-hero__image{
 
-    margin-top:4rem;
+    margin-top:3rem;
 
     position:relative;
 
@@ -279,7 +280,7 @@
 
     display:block;
 
-    height:350px;
+    height:300px;
 
     object-fit:cover;
 
@@ -295,7 +296,7 @@
 
     position:relative;
 
-    padding:2.5rem;
+    padding:1.75rem;
 }
 .project__number{
 
@@ -305,7 +306,7 @@
 
     right:30px;
 
-    font-size:5rem;
+    font-size:4rem;
 
     font-weight:800;
 
@@ -314,13 +315,14 @@
 }
 .project__content h3{
 
-    font-size:1.8rem;
+    font-size:1.5rem;
 
     margin-bottom:1rem;
 }
 .project__content p{
 
-    line-height:1.9;
+    line-height:1.7;
+    font-size: .95rem;
 
     margin-bottom:1.5rem;
 }
@@ -330,14 +332,14 @@
 
     flex-wrap:wrap;
 
-    gap:.75rem;
+    gap:.5rem;
 
     margin-bottom:1.5rem;
 }
 .project__tech span{
 
     padding:
-        .5rem 1rem;
+        .4rem .8rem;
 
     border-radius:50px;
 
@@ -347,7 +349,7 @@
     color:
         var(--primary-color);
 
-    font-size:.9rem;
+    font-size:.85rem;
 
     font-weight:600;
 
@@ -469,9 +471,9 @@
     grid-template-columns:
         repeat(2,1fr);
 
-    gap:2rem;
+    gap:1.5rem;
 
-    margin-top:4rem;
+    margin-top:3rem;
 }
 .impact__card{
 
@@ -487,7 +489,7 @@
 
     border-radius:32px;
 
-    padding:2.5rem;
+    padding:1.75rem;
 
     text-align:center;
 
@@ -531,9 +533,9 @@
 }
 .impact__icon{
 
-    width:80px;
+    width:65px;
 
-    height:80px;
+    height:65px;
 
     margin:0 auto 1.5rem;
 
@@ -551,7 +553,7 @@
     color:
         var(--primary-color);
 
-    font-size:2rem;
+    font-size:1.6rem;
 
     transition:.4s;
 }
@@ -569,7 +571,7 @@
 }
 .impact__card h3{
 
-    font-size:3rem;
+    font-size:2.4rem;
 
     color:
         var(--primary-color);
@@ -578,13 +580,14 @@
 }
 .impact__card h4{
 
-    font-size:1.3rem;
+    font-size:1.1rem;
 
     margin-bottom:1rem;
 }
 .impact__card p{
 
-    line-height:1.8;
+    line-height:1.7;
+    font-size:.95rem;
 }
 @media screen and (max-width:992px){
 
@@ -691,7 +694,7 @@
 
     background:#fff;
 
-    padding:3rem;
+    padding:2rem;
 
     border-radius:32px;
 
@@ -726,9 +729,9 @@
 }
 .category__icon{
 
-    width:90px;
+    width:70px;
 
-    height:90px;
+    height:70px;
 
     margin:0 auto 1.5rem;
 
@@ -746,7 +749,7 @@
     color:
         var(--primary-color);
 
-    font-size:2rem;
+    font-size:1.6rem;
 
     transition:.4s;
 }
@@ -765,14 +768,15 @@
 }
 .category__showcase h3{
 
-    font-size:2rem;
+    font-size:1.6rem;
 
     margin-bottom:1rem;
 }
 
 .category__showcase p{
 
-    line-height:1.9;
+    line-height:1.7;
+    font-size:.95rem;
 
     max-width:500px;
 
@@ -870,7 +874,7 @@
 
     background:#fff;
 
-    padding:4rem 3rem;
+    padding:2.5rem 2rem;
 
     border-radius:32px;
 
@@ -895,7 +899,7 @@
 
     left:30px;
 
-    font-size:6rem;
+    font-size:4.5rem;
 
     color:
         rgba(76,175,80,.08);
@@ -918,9 +922,9 @@
 }
 .testimonial__text{
 
-    font-size:1.1rem;
+    font-size:1rem;
 
-    line-height:2;
+    line-height:1.8;
 
     max-width:650px;
 
@@ -928,7 +932,7 @@
 }
 .testimonial__author h4{
 
-    font-size:1.2rem;
+    font-size:1.05rem;
 
     margin-bottom:.25rem;
 }
@@ -1039,7 +1043,24 @@
 .projects-hero__image img{
 
     width:100%;
-    height:500px;
+    height:420px;
     object-fit:cover;
 
-} 
+} .section__title{
+
+    font-size:
+        clamp(
+            1.8rem,
+            3vw,
+            2.6rem
+        );
+}
+
+.section__subtitle{
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+    max-width:650px;
+}

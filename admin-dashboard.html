@@ -158,29 +158,22 @@
             <header
                 class="dashboard__header">
 
+                <a
+                    href="index.html"
+                    class="dashboard__logo">
+
+                    <img
+                        src="assets/images/logo-stackly.webp"
+                        alt="StacklyAgri">
+
+                </a>
+
                 <button
                     class="dashboard__toggle">
 
                     <i class="ri-menu-line"></i>
 
                 </button>
-
-                <div>
-
-                    <h2
-                        id="pageTitle">
-
-                        Dashboard
-
-                    </h2>
-
-                    <p>
-
-                        Welcome back to StacklyAgri
-
-                    </p>
-
-                </div>
 
             </header>
 
@@ -208,7 +201,7 @@
 
                                     Admin
 
-                                </span> 👋
+                                </span>
 
                             </h2>
 
@@ -220,67 +213,56 @@
                             </p>
 
                         </div>
+                    </div>
 
-                        <i
-                            class="ri-dashboard-3-line">
+                    <!-- Charts -->
 
-                        </i>
+                    <div class="dashboard__charts">
+
+                        <div class="dashboard__grid">
+
+                            <div class="dashboard__box">
+
+                                <h3>
+
+                                    User Growth
+
+                                </h3>
+
+                                <div class="dashboard__chart">
+
+                                    <canvas
+                                        id="userChart">
+
+                                    </canvas>
+
+                                </div>
+
+                            </div>
+
+                            <div class="dashboard__box">
+
+                                <h3>
+
+                                    User Distribution
+
+                                </h3>
+
+                                <div class="dashboard__chart">
+
+                                    <canvas
+                                        id="roleChart">
+
+                                    </canvas>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-
-                    <!-- Statistics -->
-
-                    <div class="dashboard__cards">
-
-                        <article
-                            class="dashboard__card">
-
-                            <i class="ri-group-line"></i>
-
-                            <h3>Total Users</h3>
-
-                            <span>124</span>
-
-                        </article>
-
-                        <article
-                            class="dashboard__card">
-
-                            <i class="ri-user-star-line"></i>
-
-                            <h3>Farmers</h3>
-
-                            <span>98</span>
-
-                        </article>
-
-                        <article
-                            class="dashboard__card">
-
-                            <i class="ri-file-chart-line"></i>
-
-                            <h3>Crop Reports</h3>
-
-                            <span>256</span>
-
-                        </article>
-
-                        <article
-                            class="dashboard__card">
-
-                            <i class="ri-money-rupee-circle-line"></i>
-
-                            <h3>Revenue</h3>
-
-                            <span>₹1.2L</span>
-
-                        </article>
-
-                    </div>
-
-
-                    <!-- Dashboard Grid -->
 
                     <div class="dashboard__grid">
 
@@ -292,8 +274,7 @@
 
                             </h3>
 
-                            <ul
-                                class="dashboard__list">
+                            <ul class="dashboard__list">
 
                                 <li>
 
@@ -303,19 +284,19 @@
 
                                 <li>
 
-                                    ✓ Crop report uploaded
+                                    ✓ Crop report approved
 
                                 </li>
 
                                 <li>
 
-                                    ✓ Weather alert issued
+                                    ✓ Weather alert sent
 
                                 </li>
 
                                 <li>
 
-                                    ✓ Analytics updated
+                                    ✓ AI recommendation updated
 
                                 </li>
 
@@ -323,31 +304,62 @@
 
                         </div>
 
+
                         <div class="dashboard__box">
 
                             <h3>
 
-                                Quick Actions
+                                System Health
 
                             </h3>
 
-                            <div class="dashboard__actions">
+                            <div class="status__grid">
 
-                                <button
-                                    class="button">
+                                <div class="status__item">
 
-                                    Add Farmer
+                                    🟢 API Server
 
-                                </button>
+                                </div>
 
-                                <button
-                                    class="button">
+                                <div class="status__item">
 
-                                    Export Reports
+                                    🟢 Database
 
-                                </button>
+                                </div>
+
+                                <div class="status__item">
+
+                                    🟢 AI Engine
+
+                                </div>
+
+                                <div class="status__item">
+
+                                    🟢 Weather API
+
+                                </div>
 
                             </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard__box dashboard__full">
+
+                        <h3>
+
+                            Platform Revenue
+
+                        </h3>
+
+                        <div class="dashboard__chart">
+
+                            <canvas
+                                id="revenueChart">
+
+                            </canvas>
 
                         </div>
 
@@ -441,54 +453,84 @@
                     class="dashboard__page"
                     hidden>
 
-                    <!-- Statistics -->
+                    <div class="user__overview">
 
-                    <div class="dashboard__cards">
-
-                        <article class="dashboard__card">
+                        <div class="overview__card">
 
                             <i class="ri-group-line"></i>
 
-                            <h3>Total Users</h3>
+                            <div>
 
-                            <span>124</span>
+                                <h4>Total Users</h4>
 
-                        </article>
+                                <span>124</span>
 
-                        <article class="dashboard__card">
+                            </div>
+
+                        </div>
+
+                        <div class="overview__card">
 
                             <i class="ri-user-star-line"></i>
 
-                            <h3>Admins</h3>
+                            <div>
 
-                            <span>26</span>
+                                <h4>Admins</h4>
 
-                        </article>
+                                <span>26</span>
 
-                        <article class="dashboard__card">
+                            </div>
+
+                        </div>
+
+                        <div class="overview__card">
 
                             <i class="ri-plant-line"></i>
 
-                            <h3>Farmers</h3>
+                            <div>
 
-                            <span>98</span>
+                                <h4>Farmers</h4>
 
-                        </article>
+                                <span>98</span>
 
-                        <article class="dashboard__card">
+                            </div>
+
+                        </div>
+
+                        <div class="overview__card">
 
                             <i class="ri-user-add-line"></i>
 
-                            <h3>New This Month</h3>
+                            <div>
 
-                            <span>18</span>
+                                <h4>New Users</h4>
 
-                        </article>
+                                <span>18</span>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
+                    <div class="dashboard__box">
 
-                    <!-- Search -->
+                        <h3>
+
+                            User Registration Trend
+
+                        </h3>
+
+                        <div class="dashboard__chart">
+
+                            <canvas
+                                id="userTrendChart">
+
+                            </canvas>
+
+                        </div>
+
+                    </div>
 
                     <div class="dashboard__table">
 
@@ -500,10 +542,15 @@
 
                             </h3>
 
-                            <input
-                                type="search"
-                                placeholder="Search users..."
-                                class="table__search">
+                            <div class="table__search-box">
+
+                                <i class="ri-search-line"></i>
+
+                                <input
+                                    type="search"
+                                    placeholder="Search by name or email">
+
+                            </div>
                         </div>
 
                         <table>
@@ -1013,11 +1060,12 @@
 
     </div>
 
-    <!-- Dashboard JS -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/chart.js">
+    </script>
 
     <script
-        src="assets/js/dashboard.js">
-
+    src="assets/js/dashboard.js">
     </script>
 
 </body>

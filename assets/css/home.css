@@ -37,7 +37,7 @@
 }
 .hero__title{
 
-    font-size:4rem;
+    font-size:3rem;
 
     line-height:1.2;
 
@@ -121,7 +121,7 @@
 
 .hero__stats h3{
 
-    font-size:2rem;
+    font-size:1.75rem;
 
     color:var(--title-color);
 }
@@ -313,7 +313,7 @@
 
     position:relative;
 
-    min-height:550px;
+    min-height:500px;
 }
 .about__blob{
 
@@ -614,7 +614,7 @@
     grid-template-columns:
     repeat(3,1fr);
 
-    gap:1.5rem;
+    gap:1.25rem;
 
     margin-top:4rem;
 }
@@ -623,7 +623,7 @@
 
     background:#fff;
 
-    padding:2rem;
+    padding:1.5rem;
 
     border-radius:24px;
 
@@ -660,7 +660,7 @@
 
 .service__card h3{
 
-    font-size:1.4rem;
+    font-size:1.2rem;
 
     margin-bottom:1rem;
 
@@ -671,7 +671,7 @@
 
     line-height:1.8;
 
-    margin-bottom:2rem;
+    margin-bottom:1.25rem;
 }
 
 .service__link{
@@ -831,7 +831,7 @@
 
     align-items:center;
 
-    gap:5rem;
+    gap:3rem;
 }
 .feature__item{
 
@@ -859,10 +859,10 @@
 }
 .feature__icon{
 
-    width:60px;
-    height:60px;
+    width:52px;
+    height:52px;
 
-    min-width:60px;
+    min-width:52px;
 
     display:flex;
 
@@ -1068,11 +1068,11 @@
 
     align-items:center;
 
-    gap:2rem;
+    gap:1.25rem;
 
     background:#fff;
 
-    padding:2rem;
+    padding:1.5rem;
 
     border-radius:24px;
 
@@ -1095,10 +1095,10 @@
 }
 .why__icon{
 
-    width:80px;
-    height:80px;
+    width:65px;
+    height:65px;
 
-    min-width:80px;
+    min-width:65px;
 
     display:flex;
 
@@ -1113,7 +1113,7 @@
 
     color:var(--primary-color);
 
-    font-size:2rem;
+    font-size:1.6rem;
 
     transition:.4s;
 }
@@ -1236,7 +1236,7 @@
     grid-template-columns:
     repeat(3,1fr);
 
-    gap:2rem;
+    gap:1.5rem;
 
     margin-top:4rem;
 }
@@ -1248,7 +1248,7 @@
 
     border-radius:28px;
 
-    min-height:450px;
+    min-height:400px;
 
     cursor:pointer;
 
@@ -1417,7 +1417,7 @@
     grid-template-columns:
     repeat(3,1fr);
 
-    gap:2rem;
+    gap:1.5rem;
 
     margin-top:4rem;
 }
@@ -1433,7 +1433,7 @@
     border:
     1px solid rgba(255,255,255,.3);
 
-    padding:2rem;
+    padding:1.5rem;
 
     border-radius:28px;
 
@@ -1474,7 +1474,7 @@
 
     line-height:1.8;
 
-    margin-bottom:2rem;
+    margin-bottom:1.25rem;
 
     font-style:italic;
 }
@@ -1613,7 +1613,7 @@
 
 .blog__content{
 
-    padding:2rem;
+    padding:1.5rem;
 }
 
 .blog__category{
@@ -1638,7 +1638,7 @@
 
 .blog__content h3{
 
-    font-size:1.8rem;
+    font-size:1.5rem;
 
     margin-bottom:1rem;
 

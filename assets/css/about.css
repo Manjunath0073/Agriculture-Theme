@@ -19,14 +19,13 @@
 
     text-align:center;
 
-    max-width:800px;
+    max-width:700px;
 
-    margin:0 auto 4rem;
+    margin:0 auto 3rem;
 }
 .about-hero__title{
 
-    font-size:
-    clamp(2.5rem, 5vw, 4.5rem);
+    font-size:clamp(2.2rem, 4vw, 3.8rem);
 
     line-height:1.2;
 
@@ -52,9 +51,9 @@
 
     margin:0 auto;
 
-    line-height:1.9;
+    line-height:1.7;
 
-    font-size:1.05rem;
+    font-size:1rem;
 }
 .about-hero__breadcrumb{
 
@@ -175,7 +174,7 @@
     grid-template-columns:
     1fr 1fr;
 
-    gap:5rem;
+    gap:3rem;
 
     align-items:center;
 }
@@ -183,7 +182,7 @@
 
     position:relative;
 
-    min-height:550px;
+    min-height:480px;
 }
 .story__img-big{
 
@@ -201,7 +200,7 @@
 
     position:absolute;
 
-    width:220px;
+    width:180px;
 
     right:0;
 
@@ -247,7 +246,7 @@
 
     position:relative;
 
-    padding-bottom:3rem;
+    padding-bottom:2rem;
 }
 .timeline__dot{
 
@@ -420,7 +419,7 @@
 
     max-width:700px;
 
-    margin:4rem auto 0;
+    margin:3rem auto 0;
 
     position:relative;
 }
@@ -436,7 +435,7 @@
     border:
     1px solid rgba(255,255,255,.3);
 
-    padding:3rem;
+    padding:2rem;
 
     border-radius:32px;
 
@@ -459,8 +458,8 @@
 
 .vision__icon{
 
-    width:90px;
-    height:90px;
+    width:75px;
+    height:75px;
 
     margin:0 auto 1.5rem;
 
@@ -477,7 +476,7 @@
 
     color:var(--primary-color);
 
-    font-size:2rem;
+    font-size:1.7rem;
 
     transition:.4s;
 }
@@ -499,12 +498,12 @@
 
     margin-bottom:1rem;
 
-    font-size:1.5rem;
+    font-size:1.3rem;
 }
 
 .vision__card p{
 
-    line-height:1.9;
+    line-height:1.7;
 }
 
 .vision__connector{
@@ -616,8 +615,8 @@
 
     align-items:center;
 
-    column-gap:2rem;
-    row-gap:1rem;
+    column-gap:1rem;
+    row-gap:.5rem;
 }
 .innovation{
     grid-column:1;
@@ -645,11 +644,11 @@
 }
 .value__card{
 
-    width:260px;
+    width:240px;
 
-    min-height:260px;
+    min-height:220px;
 
-    padding:2rem;
+    padding:1.5rem;
 
     text-align:center;
 
@@ -760,12 +759,13 @@
 
     margin-bottom:.75rem;
 
-    font-size:1.3rem;
+    font-size:1.2rem;
 }
 
 .value__card p{
 
-    line-height:1.8;
+    line-height:1.6;
+    font-size:.95rem;
 }
 @media screen and (max-width:992px){
 
@@ -842,7 +842,7 @@
     grid-template-columns:
     repeat(3,1fr);
 
-    gap:2rem;
+    gap:1.5rem;
 
     margin-top:4rem;
 }
@@ -877,11 +877,11 @@
 
     position:relative;
 
-    width:180px;
+    width:150px;
 
-    height:180px;
+    height:150px;
 
-    margin:0 auto 2rem;
+    margin:0 auto 1.5rem;
 }
 .team__blob{
 
@@ -926,7 +926,7 @@
 }
 .team__card h3{
 
-    font-size:1.4rem;
+    font-size:1.2rem;
 
     margin-bottom:.5rem;
 }
@@ -1050,9 +1050,9 @@
 
     max-width:900px;
 
-    height:650px;
+    height:580px;
 
-    margin:5rem auto 0;
+    margin:3rem auto 0;
 }
 .impact__container::before{
 
@@ -1083,9 +1083,9 @@
 
     position:absolute;
 
-    width:250px;
+    width:220px;
 
-    padding:2rem;
+    padding:1.5rem;
 
     text-align:center;
 
@@ -1181,7 +1181,7 @@
 }
 .impact__card h3{
 
-    font-size:2.5rem;
+    font-size:2rem;
 
     color:var(--primary-color);
 
@@ -1189,7 +1189,7 @@
 }
 .impact__card h4{
 
-    font-size:1.2rem;
+    font-size:1rem;
 
     margin-bottom:.75rem;
 
@@ -1199,7 +1199,7 @@
 
     line-height:1.7;
 
-    font-size:.95rem;
+    font-size:.9rem;
 }
 .impact__card:hover{
 
@@ -1276,4 +1276,21 @@
     color:#D32F2F;
 }
 
+.section__title{
+    font-size:clamp(
+        1.8rem,
+        3vw,
+        2.6rem
+    );
+}
+
+.section__subtitle{
+    max-width:650px;
+
+    margin:0 auto;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+}
 

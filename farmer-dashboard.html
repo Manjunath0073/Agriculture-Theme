@@ -73,7 +73,7 @@
                 <h3
                     id="userName">
 
-                    Madan Kumar
+                    User
 
                 </h3>
 
@@ -158,29 +158,22 @@
             <header
                 class="dashboard__header">
 
+                <a
+                    href="index.html"
+                    class="dashboard__logo">
+
+                    <img
+                        src="assets/images/logo-stackly.webp"
+                        alt="StacklyAgri">
+
+                </a>
+
                 <button
                     class="dashboard__toggle">
 
                     <i class="ri-menu-line"></i>
 
                 </button>
-
-                <div>
-
-                    <h2
-                        id="pageTitle">
-
-                        Dashboard
-
-                    </h2>
-
-                    <p>
-
-                        Welcome back to StacklyAgri
-
-                    </p>
-
-                </div>
 
             </header>
 
@@ -190,8 +183,7 @@
                 class="dashboard__content">
 
                 <!-- Dashboard Page -->
-                <section
-                    id="dashboardPage"
+                <section id="dashboardPage"
                     class="dashboard__page">
 
                     <!-- Welcome Banner -->
@@ -207,7 +199,7 @@
 
                                     Farmer
 
-                                </span> 👋
+                                </span>
 
                             </h2>
 
@@ -221,60 +213,41 @@
 
                         </div>
 
-                        <i class="ri-plant-line">
-
-                        </i>
-
                     </div>
 
 
-                    <!-- Statistics -->
+                    <!-- Charts -->
 
-                    <div class="dashboard__cards">
+                    <div class="dashboard__grid">
 
-                        <article
-                            class="dashboard__card">
+                        <div class="dashboard__box">
 
-                            <i class="ri-plant-line"></i>
+                            <h3>
 
-                            <h3>Total Crops</h3>
+                                Crop Yield Analysis
 
-                            <span>12</span>
+                            </h3>
 
-                        </article>
+                            <canvas id="yieldChart">
 
-                        <article
-                            class="dashboard__card">
+                            </canvas>
 
-                            <i class="ri-map-pin-line"></i>
+                        </div>
 
-                            <h3>Active Fields</h3>
 
-                            <span>5</span>
+                        <div class="dashboard__box">
 
-                        </article>
+                            <h3>
 
-                        <article
-                            class="dashboard__card">
+                                Farm Performance
 
-                            <i class="ri-calendar-check-line"></i>
+                            </h3>
 
-                            <h3>Upcoming Harvests</h3>
+                            <canvas id="performanceChart">
 
-                            <span>3</span>
+                            </canvas>
 
-                        </article>
-
-                        <article
-                            class="dashboard__card">
-
-                            <i class="ri-heart-pulse-line"></i>
-
-                            <h3>Soil Health</h3>
-
-                            <span>92%</span>
-
-                        </article>
+                        </div>
 
                     </div>
 
@@ -440,184 +413,115 @@
 
                 <!-- Menu 2 -->
 
-                <section
-                    id="menu2Page"
+                <section id="menu2Page"
                     class="dashboard__page"
                     hidden>
 
-                    <!-- Crop Stats -->
+                    <!-- Crop Progress -->
 
-                    <div class="dashboard__cards">
+                    <div class="crop__progress">
 
-                        <article
-                            class="dashboard__card">
+                        <div class="crop__item">
 
-                            <i class="ri-plant-line"></i>
+                            <div class="crop__top">
 
-                            <h3>Total Crops</h3>
+                                <h3>
 
-                            <span>12</span>
+                                    Wheat
 
-                        </article>
+                                </h3>
 
-                        <article
-                            class="dashboard__card">
+                                <span>
 
-                            <i class="ri-heart-pulse-line"></i>
-
-                            <h3>Healthy Crops</h3>
-
-                            <span>9</span>
-
-                        </article>
-
-                        <article
-                            class="dashboard__card">
-
-                            <i class="ri-alert-line"></i>
-
-                            <h3>Need Attention</h3>
-
-                            <span>2</span>
-
-                        </article>
-
-                        <article
-                            class="dashboard__card">
-
-                            <i class="ri-calendar-check-line"></i>
-
-                            <h3>Harvest Ready</h3>
-
-                            <span>1</span>
-
-                        </article>
-
-                    </div>
-
-
-                    <!-- Crop Cards -->
-
-                    <div class="crop__grid">
-
-                        <article
-                            class="crop__card">
-
-                            <div class="crop__header">
-
-                                <h3>Wheat</h3>
-
-                                <span class="crop__status healthy">
-
-                                    Healthy
+                                    85%
 
                                 </span>
 
                             </div>
 
-                            <p>
+                            <div class="crop__bar">
 
-                                Field A-12
-
-                            </p>
-
-                            <div class="crop__details">
-
-                                <span>
-
-                                    🌱 Flowering
-
-                                </span>
-
-                                <span>
-
-                                    ⏳ 15 Days Left
+                                <span style="width:85%">
 
                                 </span>
 
                             </div>
 
-                        </article>
+                            <small>
 
+                                Field A-12 • Harvest in 15 days
 
-                        <article
-                            class="crop__card">
+                            </small>
 
-                            <div class="crop__header">
+                        </div>
 
-                                <h3>Rice</h3>
+                        <div class="crop__item">
 
-                                <span class="crop__status moderate">
+                            <div class="crop__top">
 
-                                    Moderate
+                                <h3>
+
+                                    Rice
+
+                                </h3>
+
+                                <span>
+
+                                    60%
 
                                 </span>
 
                             </div>
 
-                            <p>
+                            <div class="crop__bar">
 
-                                Field B-07
-
-                            </p>
-
-                            <div class="crop__details">
-
-                                <span>
-
-                                    🌱 Growing
-
-                                </span>
-
-                                <span>
-
-                                    ⏳ 45 Days Left
+                                <span style="width:60%">
 
                                 </span>
 
                             </div>
 
-                        </article>
+                            <small>
 
+                                Field B-07 • Harvest in 45 days
 
-                        <article
-                            class="crop__card">
+                            </small>
 
-                            <div class="crop__header">
+                        </div>
 
-                                <h3>Corn</h3>
+                        <div class="crop__item">
 
-                                <span class="crop__status alert">
+                            <div class="crop__top">
 
-                                    Alert
+                                <h3>
+
+                                    Corn
+
+                                </h3>
+
+                                <span>
+
+                                    30%
 
                                 </span>
 
                             </div>
 
-                            <p>
+                            <div class="crop__bar">
 
-                                Field C-03
-
-                            </p>
-
-                            <div class="crop__details">
-
-                                <span>
-
-                                    🌱 Germination
-
-                                </span>
-
-                                <span>
-
-                                    ⏳ 70 Days Left
+                                <span style="width:30%">
 
                                 </span>
 
                             </div>
 
-                        </article>
+                            <small>
+
+                                Field C-03 • Harvest in 70 days
+
+                            </small>
+
+                        </div>
 
                     </div>
 
@@ -737,17 +641,6 @@
                             <h3>Rain Chance</h3>
 
                             <span>40%</span>
-
-                        </article>
-
-                        <article
-                            class="dashboard__card">
-
-                            <i class="ri-windy-line"></i>
-
-                            <h3>Wind Speed</h3>
-
-                            <span>10 km/h</span>
 
                         </article>
 
@@ -1116,8 +1009,11 @@
     <!-- Dashboard JS -->
 
     <script
-        src="assets/js/dashboard.js">
+    src="https://cdn.jsdelivr.net/npm/chart.js">
+    </script>
 
+    <script
+    src="assets/js/dashboard.js">
     </script>
 
 </body>

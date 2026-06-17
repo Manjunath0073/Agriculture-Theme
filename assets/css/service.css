@@ -27,7 +27,7 @@
 .services-hero__title{
 
     font-size:
-    clamp(2.5rem, 5vw, 4.5rem);
+    clamp(2.2rem, 4vw, 3.8rem);
 
     line-height:1.2;
 
@@ -53,7 +53,8 @@
 
     margin:0 auto;
 
-    line-height:1.9;
+    line-height:1.7;
+    font-size:1rem;
 }
 .services-hero__dashboard{
 
@@ -76,9 +77,9 @@
 }
 .services-hero__circle{
 
-    width:180px;
+    width:150px;
 
-    height:180px;
+    height:150px;
 
     border-radius:50%;
 
@@ -97,7 +98,7 @@
 
     color:#fff;
 
-    font-size:4rem;
+    font-size:3.2rem;
 
     box-shadow:
     0 25px 60px
@@ -110,9 +111,9 @@
 
     position:absolute;
 
-    width:160px;
+    width:145px;
 
-    padding:1.25rem;
+    padding:1rem;
 
     background:
     rgba(255,255,255,.8);
@@ -162,7 +163,7 @@
 }
 .services-stat h3{
 
-    font-size:2rem;
+    font-size:1.7rem;
 
     color:var(--primary-color);
 
@@ -297,9 +298,9 @@
     grid-template-columns:
     repeat(3, 1fr);
 
-    gap:1.5rem;
+    gap:1.25rem;
 
-    margin-top:4rem;
+    margin-top:3rem;
 }
 
 .service__large{
@@ -319,9 +320,9 @@
 
     background:#fff;
 
-    padding:2rem;
+    padding:1.5rem;
 
-    border-radius:28px;
+    border-radius:24px;
 
     border:
     1px solid rgba(0,0,0,.05);
@@ -377,9 +378,9 @@
 }
 .service__icon{
 
-    width:70px;
+    width:60px;
 
-    height:70px;
+    height:60px;
 
     display:flex;
 
@@ -394,7 +395,7 @@
 
     color:var(--primary-color);
 
-    font-size:2rem;
+    font-size:1.6rem;
 
     margin-bottom:1.5rem;
 
@@ -414,16 +415,17 @@
 }
 .service__card h3{
 
-    font-size:1.4rem;
+    font-size:1.2rem;
 
     margin-bottom:1rem;
 }
 
 .service__card p{
 
-    line-height:1.8;
+    line-height:1.7;
 
-    margin-bottom:1.5rem;
+    margin-bottom:1rem;
+    font-size: .95rem;
 }
 .service__link{
 
@@ -513,9 +515,9 @@
     grid-template-columns:
     repeat(5,1fr);
 
-    gap:2rem;
+    gap:1.22rem;
 
-    margin-top:4rem;
+    margin-top:3rem;
 
     position:relative;
 }
@@ -552,7 +554,7 @@
 
     text-align:center;
 
-    padding:2rem 1rem;
+    padding:1.5rem .75rem;
 
     transition:.4s;
 }
@@ -575,9 +577,9 @@
 }
 .process__icon{
 
-    width:80px;
+    width:65px;
 
-    height:80px;
+    height:65px;
 
     margin:0 auto 1.5rem;
 
@@ -597,7 +599,7 @@
     color:
     var(--primary-color);
 
-    font-size:2rem;
+    font-size:1.6rem;
 
     box-shadow:
     0 15px 35px
@@ -626,7 +628,7 @@
 
 .process__card h3{
 
-    font-size:1.25rem;
+    font-size:1.1rem;
 
     margin-bottom:.75rem;
 }
@@ -733,9 +735,9 @@
 
     align-items:center;
 
-    gap:5rem;
+    gap:3rem;
 
-    margin-top:5rem;
+    margin-top:3rem;
 }
 .solution__reverse{
 
@@ -785,7 +787,7 @@
 
     right:0;
 
-    font-size:6rem;
+    font-size:5rem;
 
     font-weight:800;
 
@@ -796,15 +798,16 @@
 }
 .solution__content h3{
 
-    font-size:2rem;
+    font-size:1.6rem;
 
     margin-bottom:1rem;
 }
 .solution__content p{
 
-    line-height:1.9;
+    line-height:1.7;
 
-    margin-bottom:2rem;
+    margin-bottom:1.5rem;
+    font-size: .95rem;
 }
 .solution__features{
 
@@ -929,9 +932,9 @@
 
     background:#fff;
 
-    padding:2rem;
+    padding:1.5rem;
 
-    border-radius:28px;
+    border-radius:24px;
 
     border:
         1px solid
@@ -989,9 +992,9 @@
 }
 .tech__icon{
 
-    width:70px;
+    width:60px;
 
-    height:70px;
+    height:60px;
 
     display:flex;
 
@@ -1007,7 +1010,7 @@
     color:
         var(--primary-color);
 
-    font-size:2rem;
+    font-size:1.6rem;
 
     margin-bottom:1.5rem;
 
@@ -1028,14 +1031,15 @@
 }
 .tech__card h3{
 
-    font-size:1.4rem;
+    font-size:1.2rem;
 
     margin-bottom:1rem;
 }
 
 .tech__card p{
 
-    line-height:1.8;
+    line-height:1.7;
+    font-size: .95rem;
 }
 @media screen and (max-width:992px){
 
@@ -1109,7 +1113,7 @@
     grid-template-columns:
         repeat(3,1fr);
 
-    gap:2rem;
+    gap:1.5rem;
 
     margin-top:4rem;
 }
@@ -1124,7 +1128,7 @@
 
     background:#fff;
 
-    padding:2rem;
+    padding:1.5rem;
 
     border-radius:28px;
 
@@ -1191,9 +1195,9 @@
 }
 .industry__icon{
 
-    width:80px;
+    width:65px;
 
-    height:80px;
+    height:65px;
 
     margin:0 auto 1.5rem;
 
@@ -1211,7 +1215,7 @@
     color:
         var(--primary-color);
 
-    font-size:2rem;
+    font-size:1.6rem;
 
     transition:.4s;
 }
@@ -1229,14 +1233,15 @@
 }
 .industry__card h3{
 
-    font-size:1.3rem;
+    font-size:1.15rem;
 
     margin-bottom:1rem;
 }
 
 .industry__card p{
 
-    line-height:1.8;
+    line-height:1.7;
+    font-size: .95rem;
 }
 @media screen and (max-width:992px){
 
@@ -1294,7 +1299,7 @@
     grid-template-columns:
         350px 1fr;
 
-    gap:3rem;
+    gap:2rem;
 
     margin-top:4rem;
 
@@ -1311,7 +1316,7 @@
 
     color:#fff;
 
-    padding:2.5rem;
+    padding:2rem;
 
     border-radius:32px;
 
@@ -1342,14 +1347,15 @@
 }
 .faq__help h3{
 
-    font-size:1.8rem;
+    font-size:1.5rem;
 
     margin-bottom:1rem;
 }
 
 .faq__help p{
 
-    line-height:1.9;
+    line-height:1.7;
+    font-size: .95rem;
 
     margin-bottom:2rem;
 }
@@ -1493,4 +1499,23 @@
 .button:hover{
 
     transform:translateY(-3px);
+}
+
+.section__title{
+
+    font-size:
+        clamp(
+            1.8rem,
+            3vw,
+            2.6rem
+        );
+}
+
+.section__subtitle{
+
+    max-width:650px;
+
+    font-size:.95rem;
+
+    line-height:1.7;
 }
