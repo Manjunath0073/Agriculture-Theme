@@ -7,6 +7,10 @@
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+    <link
+    rel="icon"
+    type="image/png"
+    href="assets/images/favicon.png">
 
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
@@ -225,8 +229,11 @@
 
                         <input
                             type="text"
+                            id="name"
                             name="name"
                             placeholder="Full Name"
+                            pattern="[A-Za-z ]+"
+                            title="Only alphabets and spaces are allowed"
                             required>
 
                         <input
@@ -242,12 +249,20 @@
                             required>
 
                         <textarea
+                            id="message"
                             name="message"
                             rows="6"
+                            minlength="20"
+                            maxlength="500"
                             placeholder="Your Message"
                             required>
 
                         </textarea>
+                        <small class="form__hint">
+
+                            Minimum 20 characters required.
+
+                        </small>
 
                         <button
                             type="submit"
@@ -332,6 +347,68 @@
                     </div>
 
                 </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="map section">
+
+        <div class="container">
+
+            <div class="section__data">
+
+                <span class="section__tag">
+
+                    <i class="ri-map-pin-line"></i>
+
+                    Our Location
+
+                </span>
+
+                <h2 class="section__title">
+
+                    Visit Stackly Agri
+
+                </h2>
+
+                <p class="section__subtitle">
+
+                    Our office is located in Salem,
+                    Tamil Nadu, supporting smart
+                    agriculture solutions.
+
+                </p>
+
+            </div>
+
+            <div class="map__container">
+
+                <!-- ADD THIS CARD HERE -->
+
+                <div class="map__info">
+
+                    <i class="ri-map-pin-2-fill"></i>
+
+                    <div>
+
+                        <h3>Stackly Agri</h3>
+
+                        <p>MMR Complex, Chinna Thirupathi, Near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Google Map -->
+
+                <iframe
+                    src="https://www.google.com/maps?q=11.6762,78.1240&z=15&output=embed"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
 
             </div>
 
@@ -486,7 +563,7 @@
 
                 <div class="footer__data">
 
-                    <a href="#index.html" class="logo">
+                    <a href="index.html" class="logo">
 
                         <img src="assets/images/logo-stackly.webp" alt="StacklyAgri Logo">
 
@@ -572,7 +649,7 @@
 
                         <li>
                             <i class="ri-map-pin-line"></i>
-                            Coimbatore, India
+                            Salem, India
                         </li>
 
                         <li>
@@ -582,7 +659,7 @@
 
                         <li>
                             <i class="ri-mail-line"></i>
-                            info@agrinova.com
+                            info@stackly.com
                         </li>
 
                     </ul>
@@ -595,7 +672,7 @@
 
                 <p class="footer__copy">
 
-                    © 2026 AgriNova. All rights reserved.
+                    © 2026 Stackly. All rights reserved.
 
                     <span>|</span>
 

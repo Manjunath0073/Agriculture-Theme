@@ -58,6 +58,20 @@ if(contactForm){
 
             const message =
             contactForm.message.value.trim();
+            if(
+                message.length < 20
+            ){
+
+                contactMessage.className =
+                    "contact__message error";
+
+                contactMessage.textContent =
+                    "Message must contain at least 20 characters.";
+
+                contactForm.message.focus();
+
+                return;
+            }
 
             if(
                 !name ||
@@ -110,6 +124,33 @@ if(contactForm){
                 );
 
             }, 4000);
+
+        }
+    );
+
+}
+
+const nameInput =
+document.getElementById(
+    "name"
+);
+
+if(nameInput){
+
+    nameInput.addEventListener(
+        "input",
+        ()=>{
+
+            nameInput.value =
+                nameInput.value
+                .replace(
+                    /[^A-Za-z ]/g,
+                    ""
+                )
+                .replace(
+                    /^\s+/,
+                    ""
+                );
 
         }
     );
