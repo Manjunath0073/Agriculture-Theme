@@ -637,6 +637,9 @@
 
     display:none;
 }
+.logo{
+    margin-bottom: 1rem;
+}
 .auth__role-card span{
 
     display:flex;
